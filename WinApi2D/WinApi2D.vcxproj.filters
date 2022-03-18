@@ -58,6 +58,15 @@
     <Filter Include="Object\UI">
       <UniqueIdentifier>{e6177611-ca95-4efd-98d5-4a87ca547807}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object\Title">
+      <UniqueIdentifier>{c26bd575-6cee-4234-81e0-a26fd5496f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Map">
+      <UniqueIdentifier>{1c826dc2-22b3-4a6b-b212-507331330a76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resouce\CD2DImage">
+      <UniqueIdentifier>{0d928251-12e4-4cfc-97dd-d2904872b308}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -159,6 +168,21 @@
     <ClInclude Include="CScene_Title.h">
       <Filter>Scene</Filter>
     </ClInclude>
+    <ClInclude Include="CImageObject.h">
+      <Filter>Object\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="CBackGround.h">
+      <Filter>Object\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="CMap.h">
+      <Filter>Object\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="CRenderManager.h">
+      <Filter>Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CD2DImage.h">
+      <Filter>Resouce\CD2DImage</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinApi2D.cpp">
@@ -238,6 +262,21 @@
     </ClCompile>
     <ClCompile Include="CScene_Title.cpp">
       <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CImageObject.cpp">
+      <Filter>Object\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="CBackGround.cpp">
+      <Filter>Object\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="CMap.cpp">
+      <Filter>Object\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="CRenderManager.cpp">
+      <Filter>Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CD2DImage.cpp">
+      <Filter>Resouce\CD2DImage</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
