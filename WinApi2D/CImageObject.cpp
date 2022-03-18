@@ -18,7 +18,12 @@ CImageObject* CImageObject::Clone()
 
 void CImageObject::update()
 {
-	if (nullptr != m_pImg)
+
+}
+
+void CImageObject::render()
+{
+	if (nullptr == m_pImg)
 	{
 		return;
 	}

@@ -39,6 +39,8 @@ using namespace std;
 enum class GROUP_GAMEOBJ
 {
 	DEFAULT,
+	BACKGROUND,
+	MAP,
 	TILE,
 	PLAYER,
 	MONSTER,
@@ -52,30 +54,32 @@ enum class GROUP_GAMEOBJ
 enum class GROUP_SCENE
 {
 	TOOL,
-	TITLE,
 	START,
 	STAGE_01,
 	STAGE_02,
+	TITLE,
+	SIZE,
+};
+
+enum class GROUP_TILE
+{
+	NONE,
+	GROUND,
+	PLATFORM,
+	WALL,
+	SLOPE,
 
 	SIZE,
 };
 
-//========================================
-//## Core DC의 GDI					##
-//========================================
-
-enum class TYPE_BRUSH
+enum class MON_STATE
 {
-	HOLLOW,
-
-	SIZE,
-};
-
-enum class TYPE_PEN
-{
-	RED,
-	GREEN,
-	BLUE,
+	IDLE,
+	PATROL,
+	TRACE,
+	ATT,
+	RUN,
+	DEAD,
 
 	SIZE,
 };
@@ -105,6 +109,7 @@ enum class TYPE_EVENT
 #include "CCameraManager.h"
 #include "CUIManager.h"
 #include "CSoundManager.h"
+#include "CRenderManager.h"
 
 //========================================
 //##			디파인문				##

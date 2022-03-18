@@ -19,6 +19,7 @@ void CScene_Title::Enter()
 	CImageObject* logoObjcet = new CImageObject;
 	logoObjcet->SetPos(fPoint(100.f, 100.f));
 	logoObjcet->SetScale(fPoint(1080.f, 200.f));
+	logoObjcet->Load(L"LogoImage", L"texture\\titleIamge.png");
 	AddObject(logoObjcet, GROUP_GAMEOBJ::BACKGROUND);
 	// 3. 시작 버튼
 	// 4. 종료 버튼
